@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">    
+    
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<style>
+
+</style>
+<body>
+
+    <form>
+        
+        <h1>Random Password Generator</h1>
+
+        <section id="modifiers">
+        <input  class="checkbox" type="checkbox" id="contain-numbers">
+        <label for="contain-numbers">Contain Numbers</label>
+        <br>
+        <input type="checkbox" class="checkbox" id="contain-special">
+        <label for="contain-special">Contain Special Character</label>
+        <br>
+        <input type="checkbox"  class="checkbox" id="contain-upper">
+        <label for="contain-upper">Contain Upper Case Letters</label>
+        <br>
+        <input type="checkbox"  class="checkbox" id="contain-lower">
+        <label for="contain-lower">Contain Lower Case Letters</label>
+        <br>
+        <input type="text" id="password-length" min="4" max="32">
+        <label for="contain-lower">Password Length</label>
+        <br><br>
+        </section>
+        <button type="button" id="submit" onclick="generate()">Generate Password</button>
+        <p>Password:<strong id="password">This is pass</strong> </p>
+
+        <button type="button" class="functionalBtn"onclick="copy()" style="background-image: URL('Images/copy.svg');"></button>
+        <button type="reset" class="functionalBtn" style="background-image: URL('Images/reset.svg');"></button>
+        </form>
+
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
+
